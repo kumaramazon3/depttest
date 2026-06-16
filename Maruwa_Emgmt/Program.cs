@@ -111,7 +111,10 @@ builder.Services.AddScoped<bll_leave>();// BLL
 builder.Services.AddScoped<i_Designation, da_Designation>();// DAL
 builder.Services.AddScoped<bll_Designation>();// BLL
 
-
+#region Department
+builder.Services.AddScoped<i_Department, da_Department>();// DAL
+builder.Services.AddScoped<bll_Department>();// BLL
+#endregion
 
 #endregion
 
